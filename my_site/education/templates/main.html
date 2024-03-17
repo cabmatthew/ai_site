@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+    <h1>Hello World!</h1>
+
+    <h2>Courses</h2>
+    {% for course in myCourses %}
+    <p>
+      Title: {{ course.title }}<br/>
+      Description: {{ course.description }}<br/>
+      Category: {{ course.category }}<br/>
+      <hr/>
+      {% endfor %}
+    </p>
+
+    <h2>Modules</h2>
+    {% for module in myModules %}
+    <p>
+      Title: {{ module.title }}<br/>
+      Description: {{ module.description }}<br/>
+      Category: {{ module.category }}<br/>
+      <hr/>
+      {% endfor %}
+    </p>
+
+    <h2>Labs</h2>
+    {% for lab in myLabs %}
+    <p>
+      Title: {{ lab.title }}<br/>
+      Description: {{ lab.description }}<br/>
+      <hr/>
+      {% endfor %}
+    </p>
+
+    <h2>Submissions</h2>
+    {% for submission in mySubmissions %}
+    <p>
+      Feedback: {{ submission.feedback }}<br/>
+      Score: {{ submission.score }}<br/>
+      <hr/>
+      {% endfor %}
+    </p>
+
+    <h2>Assignments</h2>
+    {% for assignment in myAssignments %}
+    <p>
+      Title: {{ assignment.title }}<br/>
+      Description: {{ assignment.description }}<br/>
+      <hr/>
+      {% endfor %}
+    </p>
+</body>
+</html>
+
+<!--
+'myCourses': myCourses,
+'myModules': myModules,
+'myLabs': myLabs,
+'mySubmissions': mySubmissions,
+'myAssignments': myAssignments
+-->
